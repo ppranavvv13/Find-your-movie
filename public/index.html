@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Explorer</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="hero">
+    <h1>🎬 Movie Explorer</h1>
+    <p>Find your next favourite movie.</p>
+
+    <form id="search-form">
+      <input
+        id="search-input"
+        type="search"
+        placeholder="Search movies..."
+        required
+      >
+      <button type="submit">Search</button>
+    </form>
+  </header>
+
+  <main class="container">
+    <p id="message" role="status">Search for a movie to get started.</p>
+    <section id="movie-grid" class="movie-grid"></section>
+  </main>
+
+  <dialog id="movie-dialog">
+    <button id="close-dialog" class="close-button"
+      aria-label="Close details">✕</button>
+    <div id="movie-details"></div>
+  </dialog>
+</body>
+</html>
